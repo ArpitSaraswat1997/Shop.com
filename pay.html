@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Payment Page</title>
+    <link rel="stylesheet" href="pay.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="headerdiv">
+        <div class="header">
+          <img
+            src="https://img.shop.com/Image/resources/logos/shop-logo-us-cancer.svg"
+            alt=""
+          />
+          <a href="homepage2.html">Continue Shopping</a>
+        </div>
+      </div>
+      <div class="carddata">
+        <h2>Enter Your Card Details</h2>
+        <hr />
+        <label for="" class="left"
+          >Card Type:
+          <select name="cardscat" id="cardtype">
+            <option value=""></option>
+            <option value="1">Visa Card</option>
+            <option value="2">Master Card</option>
+            <option value="3">American Express</option>
+            <option value="4">Rupay Card</option>
+          </select></label
+        ><br />
+        <label for="" class="left"
+          >Name on card: <input type="text" name="" id="cardname"
+        /></label>
+        <label for="" class="left"
+          >Card No: <input type="text" name="" id="cardno"
+        /></label>
+        <label for="" class="right"
+          >Exp Month
+          <select name="" id="selcmon">
+            <option value=""></option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="02">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <label for="" class=""
+            >Exp Year
+            <select name="" id="selcyear">
+              <option value=""></option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+              <option value="2027">2027</option>
+              <option value="2028">2028</option>
+              <option value="2029">2029</option>
+              <option value="2030">2030</option>
+              <option value="2031">2031</option>
+              <option value="2032">2032</option>
+              <option value="2033">2033</option>
+            </select>
+          </label> </label
+        ><br />
+
+        <label for="" class="leftmin"
+          >CVV: <input type="password" id="cvv"
+        /></label>
+        <label for="" class="leftmin"
+          >PIN: <input type="password" id="pin"
+        /></label>
+        <div class="alerttxt">
+          <input type="checkbox" name="" id="checkbox" />
+          <p class="right2">Save this card for next time.</p>
+        </div>
+        <div class="alerttxt">
+          <input type="checkbox" name="" id="checkbox" />
+          <p class="right2">Set as default.</p>
+        </div>
+        <div class="messbox">
+          <hr />
+          <hr />
+          <p class="">
+            Default payment methods will be added to your Express Pay settings
+            for your next purchase.
+          </p>
+          <hr />
+          <hr />
+        </div>
+        <div class="billinfo">
+          <h2>Billing Information</h2>
+          <hr class="billhr" />
+          <br />
+          <div class="custdetail"></div>
+        </div>
+        <div class="paybtn">
+          <button id="paybtn" type="click">Pay Now</button>
+        </div>
+        <div class="payimg">
+          <img
+            src="https://img.shop.com/Image/local/images/cc/amex.jpg"
+            alt=""
+          />
+          <img
+            src="https://img.shop.com/Image/local/images/cc/discover.jpg"
+            alt=""
+          />
+          <img
+            src="https://img.shop.com/Image/local/images/cc/mastercard.png"
+            alt=""
+          />
+          <img
+            src="https://img.shop.com/Image/local/images/cc/visa.jpg"
+            alt=""
+          />
+          <img
+            src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/rupay-logo-icon.png"
+            alt=""
+            width="50px"
+          />
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <section class="line1">
+        © 1997-2022 Market America, Inc. or its affiliates. All other designated
+        trademarks, copyrights, and brands are the property of their respective
+        owners. (famos-p19)
+      </section>
+      <section class="line2">
+        Privacy Policy | Terms of Use | Advertising Disclosure | Return Policy |
+        Shipping Information
+      </section>
+      <section class="digimg">
+        <div id="digicert">
+          <img src="digicert.png" alt="digicert" />
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
+<script src="pay.js"></script>

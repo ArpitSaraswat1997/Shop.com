@@ -1,0 +1,3 @@
+# shop.com this page is made by our team as project of cloninng website of shop.com
+
+# Here are all development files regarding Cart and Checkout Page...

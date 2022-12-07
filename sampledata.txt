@@ -1,0 +1,29 @@
+var cartitems = [
+  {
+    title: "Isotonix® Daily Essentials Packets",
+    image:
+      "https://img.shop.com/Image/210000/214100/214196/products/935461732.jpg?plain&size=1600x1600",
+    seller: "Isotonix",
+    price: 77.25,
+    itemid: "6496",
+    qty: 1,
+  },
+  {
+    title: "Motives® 10 Years Younger Makeup Setting Spray",
+    image:
+      "https://img.shop.com/Image/240000/243300/243380/products/536366061.jpg?plain&size=1600x1600",
+    seller: "Motives® Cosmetics",
+    price: 31.95,
+    itemid: "301FS",
+    qty: 1,
+  },
+  {
+    title: "Motives® LALA Pop of LALA Pressed Pigment Palette",
+    image:
+      "https://img.shop.com/Image/240000/243300/243380/products/1943082936.jpg?plain&size=1600x1600",
+    seller: "Motives® Cosmetics",
+    price: 45.0,
+    itemid: "50LPP",
+    qty: 1,
+  },
+];

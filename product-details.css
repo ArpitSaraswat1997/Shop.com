@@ -1,0 +1,131 @@
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+#image {
+  display: flex;
+}
+#grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#img img {
+  width: 100%;
+}
+#image,
+#content {
+  margin-top: 200px;
+}
+#cartlogo {
+  width: 28px;
+  border-radius: 63px;
+  text-align: center;
+  font-weight: 800;
+  color: white;
+  background: navy;
+  height: 25px;
+}
+#thumbnails img {
+  width: 150px;
+  cursor: pointer;
+}
+#thumbnails {
+  display: flex;
+  flex-direction: column;
+}
+#content p:nth-child(6) img {
+  width: 60px;
+}
+
+hr {
+  width: 95%;
+  margin-left: 0%;
+  color: rgb(202, 202, 202);
+}
+#content h2 {
+  display: inline;
+}
+#content div p {
+  display: inline;
+  padding: 5px;
+  font-size: large;
+}
+#content > div:nth-child(8) {
+  padding: 10px;
+}
+#content > div:nth-child(9) {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  border: 1px solid #dadbe6;
+  border-radius: 4px;
+}
+#content > div:nth-child(9) > input {
+  margin-left: -120px;
+  text-align: center;
+}
+#content input,
+#content select {
+  padding: 10px;
+}
+#content select {
+  width: 60%;
+  margin-left: 20px;
+}
+body div > h1 {
+  text-align: center;
+}
+body > div > hr {
+  width: 100%;
+  color: rgb(202, 202, 202);
+}
+body > div > p {
+  text-align: justify;
+}
+#content button {
+  width: 150px;
+  padding: 10px;
+  border-radius: 50px;
+  text-align: center;
+  color: white;
+  background-color: #414467;
+  border: 1px solid #414467;
+}
+/* 521 920 */
+@media only screen and (min-width: 521px) and (max-width: 920px) {
+  #image {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #content > div:nth-child(9) > input {
+    margin-left: 0px;
+    text-align: center;
+  }
+  #thumbnails {
+    display: flex;
+    flex-direction: row;
+  }
+}
+/* 520 */
+@media only screen and (max-width: 520px) {
+  #grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+  }
+  #content > div:nth-child(9) > input {
+    margin-left: 0px;
+    text-align: center;
+  }
+  #content {
+    margin: 0;
+  }
+  #image {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #thumbnails {
+    display: flex;
+    flex-direction: row;
+  }
+}

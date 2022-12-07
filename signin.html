@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="signin.css" />
+    <title>Signin</title>
+  </head>
+  <body>
+    <header id="header">
+      <section class="discountCoupan">
+        <h3>
+          1st time customers save 25% on SHOP.COM exclusive brands using code
+          FIRST25OFF. Max $25 discount. Terms Apply.
+          <a href="" id="clickHere">Click Here</a>
+        </h3>
+      </section>
+
+      <section class="newHeader">
+        <img
+          src="https://img.shop.com/Image/resources/logos/shop-logo-us-cancer.svg"
+          alt=""
+          class="logo"
+        />
+
+        <input type="text" placeholder="Search SHOP.COM.." id="search" ">
+        <button type="submit" id="searchBtn">
+          <img
+            src="https://img.shop.com/Image/resources/images/icon-search-24px.svg"
+            onclick="openPage()"
+          />
+        </button>
+
+        <img
+          src="https://www.shop.com/feo-cdn/Z/t/BZP3JZ4so.webp"
+          alt="logo."
+          class="ad-logo"
+        />
+      </section>
+      <section class="categories">
+        <input type="checkbox" id="check" />
+        <label for="check">
+          <i class="fa-solid fa-bars" id="btn"><span> categories</span></i>
+          <i class="fas fa-times" id="cancel"></i>
+        </label>
+
+        <div class="sideBar">
+          <div id="categorieslogo">
+            <img
+              id="image1"
+              src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg"
+              alt=""
+            />
+            <h5>SHOP.COM</h5>
+          </div>
+
+          <ul>
+            <li>
+              <a href="#"> <b>Categories</b> </a>
+            </li>
+            <li><a href="products.html"> Clothes</a></li>
+            <li><a href="#"> Shoes</a></li>
+            <li><a href="#"> Beauty</a></li>
+            <li><a href="#"> Electronics</a></li>
+            <li><a href="#"> Jewelry</a></li>
+            <li><a href="#"> Kids</a></li>
+            <li><a href="#"> Pet Supplies</a></li>
+            <li><a href="#"> Food & Drink</a></li>
+            <li><a href="#"> Sports</a></li>
+            <li><a href="#"> Travels</a></li>
+            <li><a href="products.html"> All Stores</a></li>
+            <li><a href="products.html"> Exclusive Brands</a></li>
+            <li><a href="#"> Pet Supplies</a></li>
+            <li><a href="#"> Food & Drink</a></li>
+            <li><a href="products.html"> Sports</a></li>
+            <li><a href="#"> Travels</a></li>
+            <li><a href="products.html"> All Stores</a></li>
+            <li><a href="products.html"> Exclusive Brands</a></li>
+          </ul>
+        </div>
+
+        <ul class="items">
+          <li id="exclusive">
+            <a href="products.html">Exclusive Brands</a> </li>
+          </li>
+          <li id="stores"><a href="shoes.html">Stores</a></li>
+          <li id="deals"><a href="products.html">Deals</a></li>
+          <li id="shopTravels"><a href="products.html">SHOP Travel</a></li>
+          <li id="department"><a href="shoes.html">Departments</a></li>
+          <li id="shopBuddy"><a href="shoes.html">ShopBuddys</a></li>
+          <li id="shopLocal"><a href="shoes.html">SHOP LOCAL</a></li>
+        </ul>
+
+        <div class="cart-Oder-Sign">
+          <a href="signin.html">
+            <button type="button" class="signButton">
+              <img
+                src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg"
+                alt="Account"
+              /><span> Sign in </span>
+            </button>
+          </a>
+
+          <button type="button" class="signButton" onclick="window.location.href='homepage2.html';">
+            <img
+              src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg"
+              alt="Account"
+            />
+            <span>Home </span>
+          </button>
+
+          <button type="button" class="signButton" id="cart_logo" onclick="window.location.href='cart.html';" >
+            <img
+              src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg"
+              alt="Account"
+            />
+          </button>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <form>
+        <div id="sign-container">
+          <div class="sign-container1">
+            <h1>Sign in</h1>
+
+            <label for="ame"><b>Email adress</b></label>
+            <br />
+            <input
+              id="sign-emai"
+              type="email"
+              placeholder="yourname@gmail.com"
+              name="ame"
+              required
+            />
+            <br />
+            <label for="psw"><b>Password</b></label>
+            <br />
+            <input
+              id="sign-pass"
+              type="password"
+              placeholder="please enter your Password"
+              name="psw"
+              required
+            />
+
+            <button id="sign-b1" onclick="signin()">Sign In</button>
+          </div>
+          <div class="sign-container2">
+            <h4>Don't have an account?</h4>
+            <p>With a SHOP.COM account, you can enjoy the</p>
+            <p>following benefits: up to 50% Cashback on eligible</p>
+            <p>purchases, redeem discount coupons, order status</p>
+            <p>and history, saved payment options and addresses,</p>
+            <p>exclusive emails and more. Learn more</p>
+            <button type="button" id="sign-btn" onclick="window.location.href='sign-up.html'">Create your account</button>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="footerHeading">
+        <h3>Link To This Page & Tell All Your Friends!</h3>
+        <button>Copy Link</button>
+      </div>
+      <hr color="black" />
+
+      <div class="footer-second-heading">
+        <ul>
+          <li>About Us</li>
+          <li>Help</li>
+          <li>Accessibility</li>
+          <li>Contact Us</li>
+          <li>Partner</li>
+          <li>Services</li>
+          <li>Country</li>
+          <li>Region</li>
+          <li>own your own SHOP site</li>
+        </ul>
+      </div>
+
+      <div class="footer-para">
+        <p>
+          © 1997-2022 Market America, Inc. or its affiliates. All other
+          designated trademarks, copyrights, and brands are the property of
+          their respective owners.Only Customers will receive cashback on
+          qualifying purchases. UnFranchise Owners/Shop Consultants will receive
+          increased IBV instead of cashback on qualifying purchases.
+        </p>
+      </div>
+
+      <div class="footer-award">
+        <img
+          src="https://img.shop.com/Image/images/ir/Shop-ranks-19-in-newsweek-circle.png"
+          alt=""
+        />
+
+        <img
+          src="	https://img.shop.com/Image/images/ir/DC360_2022_rank_10_top_500_primary_merch_category.png"
+          alt=""
+        />
+
+        <img
+          src="https://img.shop.com/Image/images/ir/DC360_2022_rank_55_top_100.png"
+          alt=""
+        />
+
+        <img
+          src="	https://img.shop.com/Image/images/ir/Shop-ranks-15-in-NC-circle.png"
+          alt=""
+        />
+
+        <img
+          src="https://img.shop.com/Image/images/ir/DC360_2022_rank_80_top_500_and_1000.png"
+          alt=""
+        />
+
+        <img
+          src="	https://img.shop.com/Image/resources/images/torch-tafe2018-badge.png"
+          alt=""
+        />
+
+        <img
+          src="https://seal-greensboro.bbb.org/seals/blue-seal-153-100-marketamericashopcom-4002355.png"
+          alt=""
+        />
+      </div>
+    </footer>
+  </body>
+</html>
+<script src="signin.js"></script>
+<script src="homepage.js"></script>

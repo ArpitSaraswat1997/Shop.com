@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="products.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="header-footer.css" />
+  </head>
+  <body>
+    <header id="header">
+      <section class="discountCoupan">
+        <h3 style="text-align: center;">
+          1st time customers save 30% on SHOP.COM exclusive brands using code
+          MASAI30. Terms Apply.
+          <a href="" id="clickHere">Click Here</a>
+        </h3>
+      </section>
+
+      <section class="newHeader">
+        <img
+          src="https://img.shop.com/Image/resources/logos/shop-logo-us-cancer.svg"
+          alt=""
+          class="logo"
+        />
+
+        <input type="text" placeholder="Search SHOP.COM.." id="search" ">
+        <button type="submit" id="searchBtn">
+          <img
+            src="https://img.shop.com/Image/resources/images/icon-search-24px.svg"
+            onclick="openPage()"
+          />
+        </button>
+
+        <img
+          src="https://www.shop.com/feo-cdn/Z/t/BZP3JZ4so.webp"
+          alt="logo."
+          class="ad-logo"
+        />
+      </section>
+
+      <section class="categories">
+        <input type="checkbox" id="check" />
+        <label for="check">
+          <i class="fa-solid fa-bars" id="btn"><span> Categories</span></i>
+          <i class="fas fa-times" id="cancel"></i>
+        </label>
+
+        <div class="sideBar">
+          <div id="categorieslogo">
+            <img
+              id="image1"
+              src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg"
+              alt=""
+            />
+            <h5>SHOP.COM</h5>
+          </div>
+
+          <ul>
+            <li>
+              <a href="#"> <b>Categories</b> </a>
+            </li>
+            <li><a href="products.html"> Clothes</a></li>
+            <li><a href="shoes.html"> Shoes</a></li>
+            <li><a href="#"> Beauty</a></li>
+            <li><a href="#"> Electronics</a></li>
+            <li><a href="#"> Jewelry</a></li>
+            <li><a href="#"> Kids</a></li>
+            <li><a href="#"> Pet Supplies</a></li>
+            <li><a href="#"> Food & Drink</a></li>
+            <li><a href="#"> Sports</a></li>
+            <li><a href="#"> Travels</a></li>
+            <li><a href="products.html"> All Stores</a></li>
+            <li><a href="products.html"> Exclusive Brands</a></li>
+            <li><a href="#"> Pet Supplies</a></li>
+            <li><a href="#"> Food & Drink</a></li>
+            <li><a href="products.html"> Sports</a></li>
+            <li><a href="#"> Travels</a></li>
+            <li><a href="products.html"> All Stores</a></li>
+            <li><a href="products.html"> Exclusive Brands</a></li>
+          </ul>
+        </div>
+
+        <ul class="items">
+          <li id="exclusive">
+            <a href="products.html">Exclusive Brands</a> </li>
+          </li>
+          <li id="stores"><a href="shoes.html">Stores</a></li>
+          <li id="deals"><a href="products.html">Deals</a></li>
+          <li id="shopTravels"><a href="products.html">SHOP Travel</a></li>
+          <li id="department"><a href="shoes.html">Departments</a></li>
+          <li id="shopBuddy"><a href="shoes.html">ShopBuddys</a></li>
+          <li id="shopLocal"><a href="shoes.html">SHOP LOCAL</a></li>
+        </ul>
+
+          <div class="cart-Oder-Sign">
+              <button type="button" class="signButton" id="sign_logo">
+                <img
+                  src="https://img.shop.com/Image/resources/images/icon-account-circle-24px.svg"
+                  alt="Account"
+                />
+              </button>
+  
+            <button type="button" class="signButton" onclick="window.location.href='homepage2.html';">
+              <img
+                src="https://img.shop.com/Image/resources/images/icon-orders-24px.svg"
+                alt="Account"
+              />
+              <span>Home </span>
+            </button>
+  
+            <button type="button" class="signButton" id="cart_logo" onclick="window.location.href='cart.html';" >
+              <img
+                src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg"
+                alt="Account"
+              />
+            </button>
+          </div>
+      </section>
+    </header>
+    <div class="flex-start">
+      <div>
+        <span>Sort: </span>
+        <select name="" id="Sort">
+          <option value="none">Best Match</option>
+          <option value="h-to-l">Price High-Low</option>
+          <option value="l-to-h">Price Low-High</option>
+          <option value="cashback">Most Cashback</option>
+        </select>
+      </div>
+      <div></div>
+    </div>
+    <div class="flex">
+      <div class="filter">
+        <input type="checkbox" id="OneCart" />
+        <img
+          class="search__onecart-icon"
+          src="https://img.shop.com/Image/resources/images/onecart-icon.svg"
+          alt="OneCart®"
+        />OneCart &#174;
+        <hr />
+        <input type="checkbox" id="saleItems" /> Sale Items <br />
+        <input type="checkbox" id="saleItems" /> Shipping Offers
+        <hr />
+        <button>Women's Activewear Type</button>
+        <ul name="type">
+          <li>Sweatshirts</li>
+          <li>Hoodies</li>
+          <li>Pants</li>
+          <li>Shorts</li>
+          <li>T-Shirts</li>
+        </ul>
+        <hr />
+        <button>Color</button>
+        <ul name="color">
+          <li>Beige</li>
+          <li>Black</li>
+          <li>Blue</li>
+          <li>Brown</li>
+          <li>Gray</li>
+          <li>Green</li>
+          <li>Pink</li>
+          <li>Purple</li>
+          <li>Red</li>
+          <li>+ See More</li>
+        </ul>
+        <hr />
+        <button>Size</button>
+        <ul name="size">
+          <li>0X</li>
+          <li>1X</li>
+          <li>2X</li>
+          <li>3X</li>
+          <li>4X</li>
+          <li>L</li>
+          <li>M</li>
+          <li>S</li>
+          <li>XL</li>
+          <li>XS</li>
+          <li>+ See More</li>
+        </ul>
+        <hr />
+        <button>Price Range</button>
+        <ul name="range">
+          <li>$20.00 and Below</li>
+          <li>$20.01 and $30.00</li>
+          <li>$30.01 and $40.00</li>
+          <li>$40.01 and $50.00</li>
+          <li>$50.01 and Above</li>
+          <li>
+            <form action="">
+              <input type="number" id="min" placeholder="Min" />
+              <input type="number" id="max" placeholder="Max" />
+              <input type="submit" value=">" />
+            </form>
+          </li>
+        </ul>
+        <div>
+          <p>Tell us how we are doing</p>
+          <p>
+            We constantly strive to improve the customer experience and we value
+            your feedback.
+          </p>
+          <textarea
+            id="feedback"
+            placeholder="Enter feedback here. Include your email address if you would like to be contacted."
+          >
+          </textarea>
+          <br />
+          <button id="feedbackBtn" placeholder="Submit Feedback">
+            Submit Feedback
+          </button>
+          <h3>Thanks!</h3>
+          <p>Your feedback is appreciated and reviewed by our team.</p>
+        </div>
+      </div>
+      <div class="grid-products"></div>
+    </div>
+    <footer class="footer">
+      <div class="footerHeading">
+        <h3>Link To This Page & Tell All Your Friends!</h3>
+        <button>Copy Link</button>
+      </div>
+      <hr color="black" />
+
+      <div class="footer-second-heading">
+        <ul>
+          <li>About Us</li>
+          <li>Help</li>
+          <li>Accessibility</li>
+          <li>Contact Us</li>
+          <li>Partner</li>
+          <li>Services</li>
+          <li>Country</li>
+          <li>Region</li>
+          <li>own your own SHOP site</li>
+        </ul>
+      </div>
+
+      <div class="footer-para">
+        <p>
+          © 1997-2022 Market America, Inc. or its affiliates. All other
+          designated trademarks, copyrights, and brands are the property of
+          their respective owners.Only Customers will receive cashback on
+          qualifying purchases. UnFranchise Owners/Shop Consultants will receive
+          increased IBV instead of cashback on qualifying purchases.
+        </p>
+      </div>
+
+      <div class="footer-award">
+        <img
+          src="https://img.shop.com/Image/images/ir/Shop-ranks-19-in-newsweek-circle.png"
+          alt=""
+        />
+
+        <img
+          src="	https://img.shop.com/Image/images/ir/DC360_2022_rank_10_top_500_primary_merch_category.png"
+          alt=""
+        />
+
+        <img
+          src="https://img.shop.com/Image/images/ir/DC360_2022_rank_55_top_100.png"
+          alt=""
+        />
+
+        <img
+          src="	https://img.shop.com/Image/images/ir/Shop-ranks-15-in-NC-circle.png"
+          alt=""
+        />
+
+        <img
+          src="https://img.shop.com/Image/images/ir/DC360_2022_rank_80_top_500_and_1000.png"
+          alt=""
+        />
+
+        <img
+          src="	https://img.shop.com/Image/resources/images/torch-tafe2018-badge.png"
+          alt=""
+        />
+
+        <img
+          src="https://seal-greensboro.bbb.org/seals/blue-seal-153-100-marketamericashopcom-4002355.png"
+          alt=""
+        />
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script src="products.js" defer></script>
+<script src="header.js" defer></script>
+<script src="cart.js"></script>
+<script src="homepage.js"></script>

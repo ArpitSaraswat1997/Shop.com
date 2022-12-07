@@ -1,0 +1,172 @@
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 600px) {
+  #main {
+    flex-direction: column;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+  }
+  input {
+    width: 200%;
+  }
+  .form1 {
+    margin-right: 0px;
+  }
+  h1 {
+    text-align: center;
+  }
+
+  label > input {
+    width: 250%;
+  }
+  .processbar {
+    justify-content: center;
+  }
+  #mob2 {
+    width: 50%;
+  }
+  .pass {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.header > img {
+  width: 200px;
+}
+.header {
+  width: 100%;
+  margin-bottom: 100px;
+  padding: 5px 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.header > a {
+  position: absolute;
+  right: 10px;
+  width: 32%;
+  margin-top: 10px;
+  text-align: right;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: darkslategray;
+}
+.formhead {
+  margin: auto;
+  max-width: 75rem;
+}
+h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1em;
+  margin: 0.625rem 0;
+}
+.processbar {
+  display: flex;
+}
+.prc1 {
+  border-radius: 7px 0 0 7px;
+  color: aliceblue;
+  background-color: #414467;
+  width: 98px;
+  height: 48px;
+  margin-right: 5px;
+  border-top-right-radius: 30px;
+  border-end-end-radius: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.prc2 {
+  border-radius: 7px 0 0 7px;
+  color: #414467;
+  background-color: aliceblue;
+  width: 240px;
+  height: 48px;
+  margin-right: 5px;
+  border-top-right-radius: 30px;
+  border-end-end-radius: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.prc3 {
+  border-radius: 7px 0 0 7px;
+  color: #414467;
+  background-color: #f0f1f7;
+  width: 98px;
+  height: 48px;
+  margin-right: 5px;
+  border-top-right-radius: 30px;
+  border-end-end-radius: 30px;
+  font-weight: 200;
+  text-align: center;
+}
+.form1 {
+  margin: auto;
+  max-width: 75rem;
+}
+.details {
+  margin: auto;
+  max-width: 75rem;
+}
+label {
+  display: block;
+  width: 35%;
+  margin-top: 20px;
+}
+.labelname {
+  float: left;
+  margin-top: 20px;
+}
+input {
+  margin-top: 5px;
+  width: 100%;
+  height: 40px;
+  font-size: larger;
+}
+.labellast {
+  float: right;
+}
+h3 {
+  margin-top: 50px;
+}
+.checkbox {
+  height: 20px;
+  width: 20px;
+}
+.agree {
+  width: 100%;
+}
+.pass {
+  margin-bottom: 110px;
+}
+#footer {
+  border: 2px solid black;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom: 7px solid black;
+  background-color: #f0f1f7;
+  height: 120px;
+}
+.digimg {
+  float: right;
+  height: 85px;
+}
+.lastline {
+  margin-bottom: 150px;
+}
+#prcd {
+  width: 526px;
+  height: 51px;
+  border-radius: 50px;
+  background-color: #414467;
+  color: #f0f1f7;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+#prcd:hover {
+  background-color: #1c1d29;
+  cursor: pointer;
+}
